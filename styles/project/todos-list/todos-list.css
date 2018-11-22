@@ -1,0 +1,67 @@
+
+.todos-list {
+
+    }
+
+    .todos-list_item {
+        padding: 16px;
+        margin-bottom: -1px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        }
+        .todos-list_item:after {
+            content: '';
+            clear: both;
+            display: table;
+            }
+
+        .todos-list_item_ready-marker {
+            float: left;
+            margin-right: 16px;
+            }
+
+        .todos-list_item_text-w {
+            overflow: hidden;
+            }
+
+            .todos-list_item_text {
+                width: 100%;
+                box-sizing: border-box;
+                font-family: "Helvetica Neue", Arial, sans-serif;
+                font-size: 24px;
+                color: #666;
+                line-height: 30px;
+                font-weight: 200;
+                width: 100%;
+                border: none;
+                resize: none;
+                max-height: 32px;
+                }
+
+        .todos-list_item_remove {
+            float: right;
+            margin-left: 16px;
+            /*display: none;*/
+            visibility: hidden;
+            height: 18px;
+            width: 18px;
+            margin: 12px;
+            background: url("../../../images/close.png") no-repeat 0 0;
+            border: none;
+            }
+
+            @media (-webkit-min-device-pixel-ratio: 1.5),
+                   (min-resolution: 120dpi),
+                   (min-resolution: 1.5dppx) {
+                .todo-list_item-remove {
+                    background: url("../../../images/close@2x.png") no-repeat 0 0;
+                    margin: 22px;
+                    width: 34px;
+                    height: 34px;
+                    }
+                }
+
+            .todos-list_item:hover .todos-list_item_remove {
+                /*display: block;*/
+                visibility: visible;
+                }

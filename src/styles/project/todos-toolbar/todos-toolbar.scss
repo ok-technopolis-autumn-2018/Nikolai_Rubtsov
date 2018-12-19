@@ -1,0 +1,61 @@
+.todos-toolbar{
+    min-height: 40px;
+    display: block;
+    text-align: center;
+    padding: 4px 12px;
+    border-top: 1px solid #e6e6e6;
+}
+
+
+    .todos-toolbar_unready-counter{
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 200;
+        padding: 2px 0;
+        float: left;
+        margin: 8px 16px 8px 0;
+        color: #888888;
+    }
+
+    .todos-toolbar_clear-completed{
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 200;
+        margin: 8px 0 8px 16px;
+        padding: 2px 0;
+        float: right;
+        color: #888888;
+        cursor: pointer;
+        background: none;
+        border: 1px solid #fff;
+    }
+
+    .todos-toolbar_filters{
+        white-space: nowrap;
+        display: inline-block;
+        text-align: center;
+        margin: 8px 0;
+
+    }
+
+    .filters-item{
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        background: none;
+        outline: none;
+        padding: 2px 8px;
+        border-radius: 10px;
+        font-weight: 200;
+        border: 0;
+        box-sizing: border-box;
+        color: #888888;
+        cursor: pointer;
+    }
+
+        .filters-item.__selected{
+            border: 1px solid #ebdfdf;
+            border-radius: 5px;
+        }
